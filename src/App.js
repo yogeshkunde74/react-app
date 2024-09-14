@@ -40,7 +40,7 @@ function App() {
         <Navbar title="Textutils" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
-          <Switch>
+          <Switch basename="/react-app">
             <Route exact path="/about">
               <About />
             </Route>
