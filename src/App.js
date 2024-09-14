@@ -35,12 +35,12 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/react-app">
       <>
         <Navbar title="Textutils" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
-          <Switch basename="/react-app">
+          <Switch>
             <Route exact path="/about">
               <About />
             </Route>
